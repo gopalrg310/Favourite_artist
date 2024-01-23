@@ -24,7 +24,3 @@ Response FORMAT
 
 To Run test cases
 `go test -v`
-
-
-And do 
-`go build`
