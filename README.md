@@ -8,7 +8,7 @@ Hit the API is
 GET
 http://localhost:8080/top-track?region=india
 
-Respose FORMAT
+Response FORMAT
 
 `{
     "artist": {
