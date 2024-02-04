@@ -36,7 +36,7 @@ func GetArtistImage(artist string) (string, error) {
 			Link string `json:"link"`
 		} `json:"items"`
 	}
-
+	fmt.Printf("Response from url: %v, %v %v \n", url,string(body), resp.Status)
 	err = json.Unmarshal(body, &response)
 	if err != nil {
 		fmt.Println("GetArtistImage: ", string(body))

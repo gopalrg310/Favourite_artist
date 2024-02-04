@@ -32,7 +32,7 @@ func GetLyrics(artist, track string) (models.MusixmatchLyrics, error) {
 			Body models.MusixmatchLyrics `json:"body"`
 		} `json:"message"`
 	}
-
+	fmt.Printf("Response from url: %v, %v %v \n", url,string(body), resp.Status)
 	err = json.Unmarshal(body, &response)
 	if err != nil {
 		fmt.Println("GetLyrics:", string(body))

@@ -32,7 +32,7 @@ func GetTopTrack(region string) (models.LastFMTrack, error) {
 			Track []models.LastFMTrack `json:"track"`
 		} `json:"tracks"`
 	}
-
+	fmt.Printf("Response from url: %v, %v %v \n", url,string(body), resp.Status)
 	err = json.Unmarshal(body, &response)
 	if err != nil {
 		return models.LastFMTrack{}, err
